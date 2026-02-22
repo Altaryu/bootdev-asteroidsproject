@@ -50,7 +50,7 @@ def main():
             for sh in shots:
                 if ast.collides_with(sh) == True:
                     log_event("asteroid_shot")
-                    ast.kill()
+                    ast.split()
                     sh.kill()
         #player.draw(screen)
         for draw in drawable:
